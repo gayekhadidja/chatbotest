@@ -1,0 +1,57 @@
+version: "2.0"
+stories:
+- story: protection equipement
+  steps:
+  - intent: Protection_Equipements_Informatiques
+  - action: utter_Protection_Equipements_Informatiques
+  - action: utter_verrouillage_ecran
+  - action: utter_attache_cable
+ 
+- story: protection information information
+  steps:
+  - intent: protection_information_confidentielle
+  - action: utter_protection_information_confidentielle
+  - action : utter_interdit_envoyer
+  - action: utter_stocker_information_confidentielle
+  - action : utter_interdit_stoker
+  - action: utter_reclassifier_information_confidentiel
+  - action: utter_impression_document
+
+- story : usage réseau
+  steps:
+  - intent: usage_reseaux
+  - action: utter_usage_reseaux
+    
+- story : reglement relatif usage des équipement informatique 
+  steps :
+  - intent: usage_equipement_informatique
+  #- action :	utter_usage_equipement_informatique
+  - action: utter_interdit_installer
+  - action: utter_analyse_antivirus
+
+
+- story: interdictions 
+  steps: 
+  - intent: interdiction
+  - action: utter_interdiction
+  - action : utter_interdiction2
+
+- story: mesure de sécurité 
+  steps: 
+  - intent:  Naviguer_sur_internet
+  - action: utter_Naviguer_sur_internet
+  - action: utter_mesure_securité2
+  - action: utter_vérifier_mis_à_jour
+  - action:  utter_maintenir_logiciels
+
+
+- story: salutation et bienvenue
+  steps:
+  - intent: saluer
+  - action: utter_bienvenue
+  - action: utter_application 
+- story: interactive_story_1
+  steps:
+  - intent: champs_application
+  - action: utter_champs_application
+  - intent: responsabilite_utilisateurs

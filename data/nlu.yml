@@ -1,0 +1,118 @@
+version: "2.0"
+nlu:
+- intent: logiciels_interdit
+  examples: |
+    - Liste logiciels interdits
+    - logiciels interdit
+    - llologiciels interdit
+    - liste de logiciels interdit
+- intent: personne_conserné_de_la_charte
+  examples: |
+    - a qui s'applique la charte informatique
+    - les personnes consernée
+    - les groupe consernées
+    - les personne conserné par la charte
+    - A qui s'applique la charte informatique
+- intent: champs_application
+  examples: |
+    - le champs d'application de cette charte
+    - quel est le champs d'application de la charte
+    - champs d'application
+    - champ application
+    - champs d'applications
+    - champs d'app
+    - area d'app
+    - champs  app
+    - champs d'application de cette charte
+- intent: responsabilite_utilisateurs
+  examples: |
+    - quels est la responsabilité des utilisateurs
+    - c'est quoi la responsabilité des utilisateurs
+    - responsabilité des utilisateurs
+    - responsabilite des utilisateur
+    - responsabilité des utilisateur
+- intent: usage_equipement_informatique
+  examples: |
+    - usage des équipements informatique
+    - réglement relatif à l'usage des équipements informatique
+- intent: usage_reseaux
+  examples: |
+    - usage réseaux informatiques
+    - politique pour l'usage du réseaux
+    - réglement relatif à l'usage du réseaux atos
+- intent: interdiction
+  examples: |
+    - ce qu'il faut faire
+    - interdiction
+- intent: Naviguer_sur_internete
+  examples: |
+    - quels sont les mesure de securite
+    - mesure de securité
+    - réglement lié à la navigation sur internet
+    - naviger sur internet
+- intent: Protection_Equipements_Informatiques
+  examples: |
+    - Protéger les Equipements Informatiques
+- intent: reglement_réseaux
+  examples: |
+    - reglement consernant les réseaux sociaux
+- intent: saluer
+  examples: |
+    - bonjour
+    - hey
+    - hi
+    - salut
+    - bonsoir
+- intent: demande_nouvelle_politique
+  examples: |
+    - quels la nouvelle politique consernant les mots de passe
+    - nouvelle politique de mot de passe
+    - politique de mot de passe
+    - new password politique
+    - changement de mot de passe
+    - poilitique de mot de passe
+    - changement apporté sur la politique de password
+    - demande nouvelle polique de mot de passe
+- intent: dire_nouvelle_politique
+  examples: |
+    - quels seront les changement
+    - quels seront les modifications
+- intent: merci
+  examples: |
+    - merci
+    - bye
+    - saluer
+    - super
+    - great
+- intent: bot_question
+  examples: |
+    - etes vous un bot
+- intent: hors_domain
+  examples: |
+    - je veux du pain
+    - je veux de la viande
+    - je veux un pizza
+    - j'ai perdu mon stylo
+    - need a pizza
+    - la connection de marche pas
+    - je besoins du repos
+    - j'ai un probleme avec mon ordinateur
+    - je veux du pizza
+- intent: protection_information_confidentielle
+  examples: |
+    - protection information confidentielle
+    - comment protéger les données confidentielle
+    - réglement relatif à la protection des innformation confidentielle
+- intent: content
+  examples: |
+    - fantastique
+- intent: i_ambot
+  examples: |
+    - etes vouts un bot
+- intent: mesure_securité2
+  examples: |
+    - suivant
+    - mesure securite 2
+- intent: vérifier_mis_à_jour
+  examples: |
+    - vérifier les mis à jour

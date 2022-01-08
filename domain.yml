@@ -1,0 +1,124 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- Naviguer_sur_internet
+- Naviguer_sur_internete
+- Protection_Equipements_Informatiques
+- bot_question
+- champs_application
+- chitchat_reglement_réseaux
+- content
+- demande_nouvelle_politique
+- dire_nouvelle_politique
+- hors_domain
+- i_ambot
+- interdiction
+- logiciels_interdit
+- merci
+- mesure_securite
+- mesure_securité2
+- personne_conserné_de_la_charte
+- protection_donnée_confidentielle
+- protection_information_confidentielle
+- reglement_réseaux
+- responsabilite_utilisateurs
+- responsabilité_des_utilisation
+- saluer
+- usage_equipement_informatique
+- usage_reseaux
+- vérifier_mis_à_jour
+responses:
+  utter_logiciels_interdit:
+  - buttons:
+    - payload: /personne_conserné_de_la_charte
+      title: "A qui s'applique la charte informatique "
+    - payload: /champs_application
+      title: "champs d'application de cette charte "
+    - payload: /responsabilite_utilisateurs
+      title: 'responsabilité des utilisateur '
+    - payload: /demande_nouvelle_politique
+      title: 'demande nouvelle polique de mot de passe '
+    text: |
+      Les logiciels qui font partie des catégories suivantes sont interdits : 
+      <br> - Messageries instantanées autres que celles du groupe Atos 
+      <br> - Systèmes de téléphonie IP autres que ceux du groupe Atos 
+      <br> - Logiciel P2P (Peer-2-Peer) 
+      <br> - Systèmes "d'anonymat" tels que TOR
+      <br> - Scanners / analyseur de réseau hors réseau / fonctions de sécurité 
+      <br> - Logiciel "espion", générateur de clés illégales et tout outil de piratage 
+      <br> - Logiciels non acquis légalement
+      pour plus d'information  sur laa liste des logiciels interdits vous pouvez vous référez à ce lien <a href="https://sp2013.myatos.net/organization/sf/grpsec/fr/SMSI/AF-SEC-0092%20Directive_securite_logiciel_interdit.pdf"> liste logiciels interdit </a>
+  utter_bienvenue:
+  - buttons:
+    - payload: / logiciels_interdit
+      title: ' 1)  Liste de logiciels interdit '
+    - payload: /personne_conserné_de_la_charte
+      title: " 2)  A qui s'applique la charte informatique "
+    - payload: /champs_application
+      title: " 3)  champs d'application de cette charte "
+    - payload: /responsabilite_utilisateurs
+      title: ' 4)  responsabilité des utilisateurs '
+    - payload: /demande_nouvelle_politique
+      title: ' 5)  demande nouvelle polique de mot de passe '
+    text: Bienvenue . je suis un assistant informatique .Vous pouvez trouvez les règles visant à assurer la sécurité des informations et de leurs traitements au sein des entités juridiques et opérationnelles du Groupe Atos . Lu et assimilé les règles de sureté et de sécurité est indispensable .
+  utter_application:
+  - text: |-
+      Je peux vous aider à trouver : <br>  A qui est applicable la charte informatique  <br> Le champs d'application de la charte  <br> La responsabilité des utilisateur  <br> les logiciels interdits  <br> Nouvelle politique de mot de passe 
+      <br><b> Saviez-vous : </b> <br> Tout salarié Atos qui ne respecterait pas la charte peut faire l’objet d’une sanction en vertu des dispositions du règlement intérieur applicable. Le non-respect de la charte par un prestataire peut entraîner la demande par Atos de son remplacement .
+  utter_personne_conserné_de_la_charte:
+  - buttons:
+    - payload: /logiciels_interdit
+      title: "A qui s'applique la charte informatique "
+    - payload: /champs_application
+      title: "champs d'application de cette charte "
+    - payload: /responsabilite_utilisateurs
+      title: 'responsabilité des utilisateur '
+    - payload: /demande_nouvelle_politique
+      title: 'demande nouvelle polique de mot de passe '
+    text: |
+      L'application de la carte charte est du devoir et de la responsabilité de chacun. 
+      La charte s’applique : <br>
+      <br> - à tous les salariés Atos, aux tiers, aux personnels temporaires ou sous-traitants 
+      <br> - quel que soit le lieu (dans les locaux d'Atos, chez le client, au domicile de l’Utilisateur 
+      <br> - en accédant directement ou indirectement aux systèmes d’information Atos et de ses clients, 
+      <br> - en se connectant au réseau, à Internet, à l’Intranet ou à tout système de communication (via le courrier électronique et les réseaux sociaux à titre d’exemple) à partir d’un équipement informatique détenu ou non par Atos.
+  utter_champs_application:
+  - buttons:
+    - payload: /logiciels_interdit
+      title: 'logiciels interdits '
+    - payload: /responsabilite_utilisateurs
+      title: 'responsabilité des utilisateur '
+    - payload: /demande_nouvelle_politique
+      title: 'demande nouvelle polique de mot de passe '
+    text: "La présente politique précise l'utilisation qui doit être faite par les Utilisateurs des équipements informatiques connectés à tout type de ressources d'Atos, ce qui comprend en particulier :  <br> - Tout ou partie de l’infrastructure propriété d'Atos (à titre d’exemple : les réseaux, les postes de travail et leur environnement),  <br> - Tout ou partie de l’environnement applicatif informatique d’Atos (logiciels, applications, ressources Internet ou Intranet),  <br>- Tout ou partie d’une infrastructure informatique interconnectée à l'infrastructure informatique ou à l’environnement applicatif d’Atos ou de ses clients."
+actions:
+- utter_Naviguer_sur_internet
+- utter_Protection_Equipements_Informatiques
+- utter_analyse_antivirus
+- utter_application
+- utter_attache_cable
+- utter_bienvenue
+- utter_champs_application
+- utter_default
+- utter_demande_nouvelle_politique
+- utter_dire_nouvelle_politique
+- utter_impression_document
+- utter_interdiction
+- utter_interdiction2
+- utter_interdit_envoyer
+- utter_interdit_installer
+- utter_interdit_stoker
+- utter_logiciels_interdit
+- utter_maintenir_logiciels
+- utter_mesure_securité2
+- utter_personne_conserné_de_la_charte
+- utter_protection_information_confidentielle
+- utter_reclassifier_information_confidentiel
+- utter_responsabilite_utilisateurs
+- utter_stocker_information_confidentielle
+- utter_usage_equipement_informatique
+- utter_usage_reseaux
+- utter_verrouillage_ecran
+- utter_vérifier_mis_à_jour

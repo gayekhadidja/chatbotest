@@ -1,0 +1,36 @@
+version: "2.0"
+
+
+rules:
+- rule: logiciels interdit
+  steps:
+    - intent: logiciels_interdit
+    - action: utter_logiciels_interdit
+
+ 
+- rule: a qui s'applique la charte informatique
+  steps:
+    - intent: personne_conserné_de_la_charte
+    - action: utter_personne_conserné_de_la_charte
+
+- rule: champs d'applications
+  steps:
+    - intent: champs_application
+    - action: utter_champs_application
+
+
+
+- rule: nouvelle politique de mot de passe
+  steps:
+    - intent: demande_nouvelle_politique
+    - action: utter_demande_nouvelle_politique
+
+- rule: dire nouvelle politique
+  steps:
+    - intent: demande_nouvelle_politique
+    - action: utter_demande_nouvelle_politique
+
+- rule : reglement hors domains 
+  steps : 
+    - intent : hors_domain
+    - action : utter_default
